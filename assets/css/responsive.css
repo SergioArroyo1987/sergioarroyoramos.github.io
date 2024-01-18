@@ -1,0 +1,189 @@
+
+html{
+    font-size: 10px;
+}
+@media(max-width: 800px){
+    .layout{
+      
+        min-width: 100%;
+        min-height:100%;
+        grid-template-columns: 100%;
+        margin: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .layout__container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        grid-template-areas: "conter";
+        
+    }
+   
+    .container__pagina{
+        min-width: 100%;
+        height: 100vh;
+       
+        border-radius: 0;
+       
+        margin: 0;
+    }
+    .layout__aside{
+        position: absolute;
+        height: auto;
+        width: 30rem;
+        right: 0;
+        border-radius: 0;
+        z-index: 99;
+    }
+    .layout__menu{
+        position:static;
+        background-color:transparent;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+    .usuario__datos{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu__icon{
+        display: none;
+    }
+    .menu__lista{
+        background-color: transparent;
+        box-shadow: none;
+        
+        padding: 4rem;
+        
+    }
+    .usuario__name{
+        font-size: 2rem;
+    }
+    .usuario__divimagen img{
+        width: 12rem;
+        height: 11rem;
+    }
+    .usuario__divimagen{
+        margin-top: 2rem;
+    }
+    .menu__overlay{
+        position: static;
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .aside__usuario{
+        height: 100vh;
+        min-width: 20rem;
+    }
+    body{
+        background-image: none;
+        
+        height: 100vh;
+        
+    }
+    .layout__hamburguesa{
+        display: block;
+        z-index: 999;
+        position: absolute;
+        
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: var(--color-secundario);
+        border-radius: 3rem;
+        text-align: center;
+        line-height: 4rem;
+        color: var(--color-principal);
+        font-size: 2rem;
+        right:1rem;
+        top:1rem;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+        
+    }
+    .pagina__contenido{
+        flex-wrap: wrap;
+    }
+    .pagina__estudios{
+        flex-basis: 100%;
+        height: auto;
+    }
+    .pagina__cursos{
+        flex-basis: 100%;
+        height:auto;
+    }
+    .cursos__udemy{
+        width: 40%;
+        margin-left: 25%;
+    }
+    .udemy__linea{
+        width:60%;
+    }
+    .usuario__footer{
+        position: static;
+        bottom: 5rem;
+    }
+    .boton__btn{
+        padding: 1rem;
+    }
+    .fa-bars,.fa-x{
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 27%;
+        transition: all 300ms ease-in-out;
+    }
+    .fa-bars{
+        opacity: 1;
+    }
+    .fa-x{
+        opacity: 0;
+    }
+    .layout__hamburguesa--visible{
+        opacity: 1;
+        right: 0;
+    }
+    .layout__hamburguesa--oculto{
+        opacity: 0;
+        right: -100%;
+    }
+    .imagenes__figure{
+        flex-basis: 100%;
+        flex-flow: ;
+    }
+    .yo__informacion{
+        flex-wrap: wrap;
+    }
+    .informacion__bio{
+        flex-basis: 100%;
+    }
+    .datos__info{
+        margin-left:-1rem;
+    }
+    .servicios__servicio{
+        width: 100%;
+    }
+    .contacta__lista{
+        width: 100%;
+    }
+    .lista__opcion{
+        margin: 10%;
+        font-size: 2rem;
+    }
+    .pagina__name {
+        
+        margin-bottom: 1rem;
+        display: block;
+        text-align: center;
+       
+      }
+}
+@media(max-width:400px){
+    .email{
+        font-size: 1.7rem;
+    }
+}

@@ -51,6 +51,7 @@ a{
     text-decoration: none;
     color:var(--color-principal);
 }
+
 h1,h2,h3,h4,h5{
     color: #222;
 }
@@ -297,6 +298,7 @@ h1,h2,h3,h4,h5{
 .servicios__contenido1{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     
     margin: 0px auto;
     justify-content: space-around;
@@ -448,6 +450,9 @@ h1,h2,h3,h4,h5{
     
     margin: 30px;
     font-size: 3rem;
+    background-color: rgb(212, 211, 211);
+    text-align: center;
+    box-shadow: 0px 5px 8px;
 }
 .link{
     
@@ -456,9 +461,21 @@ h1,h2,h3,h4,h5{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:var(--color-texto);
 }
+.link:hover{
+    color:var(--color-secundario);
+    opacity: 1;
+}
+
+
+
 .iconos{
     color: var(--color-secundario);
     font-size: 4rem;
 }
-
+.menu__active{
+    color:var(--color-secundario);
+}
+.layout__hamburguesa{
+    display: none;
+}
 
